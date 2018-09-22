@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index Component will match snapshot 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src={
+        Object {
+          "process": [Function],
+        }
+      }
+    />
+  </header>
+  <div>
+    Loading
+  </div>
+</div>
+`;

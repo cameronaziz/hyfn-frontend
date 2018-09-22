@@ -1,0 +1,55 @@
+{
+  "name": "hyfn",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.1.0",
+    "apollo-boost": "^0.1.16",
+    "dotenv": "^6.0.0",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.9.2",
+    "graphql-tools": "^4.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-apollo": "^2.1.11",
+    "react-dom": "^16.5.2",
+    "react-scripts": "1.1.5",
+    "unfetch": "^4.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "jest": "jest --coverage --watch --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/registerServiceWorker.js --collectCoverageFrom=!tests/**/*.*",
+    "jest-go": "jest --coverage --collectCoverageFrom=src/**/*.js --collectCoverageFrom=!src/registerServiceWorker.js --collectCoverageFrom=!tests/**/*.*",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "coveralls": "^3.0.2",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.5.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "verbose": true,
+    "collectCoverage": true,
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/transformer.js",
+      "\\.(css|less)$": "<rootDir>/tests/transformer.js"
+    }
+  }
+}
