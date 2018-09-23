@@ -38,23 +38,23 @@ const Ads = ({
                 className={classes.tableRow}
                 selected={adSelected === row.id}
                 onClick={() => {
-                    selectAd(row.id);
-                  }}
+                  selectAd(row.id);
+                }}
                 onKeyPress={() => {
-                    selectAd(row.id);
-                  }}
+                  selectAd(row.id);
+                }}
               >
                 <div className={classes.stickyCell}>
-                    {row.name}
-                  </div>
+                  {row.name}
+                </div>
                 <div className={classes.tableCell}>
-                    <Chip
-                      color={
+                  <Chip
+                    color={
                       row.status === 'ACTIVE' ? 'primary' : 'secondary'
                     }
-                      label={row.status}
-                    />
-                  </div>
+                    label={row.status}
+                  />
+                </div>
                 <div className={classes.tableCell}>{row.frequency}</div>
                 <div className={classes.tableCell}>{row.spend}</div>
                 <div className={classes.tableCell}>{row.cpm}</div>

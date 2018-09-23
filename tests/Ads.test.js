@@ -59,4 +59,15 @@ describe('Ads Component', () => {
     appWrapper.update();
     expect(selectAd).toHaveBeenCalled();
   });
+
+  it('will keypress and execute adSelected', async () => {
+    const adsWrapper = mount(adsComponent);
+    await new Promise(resolve => setTimeout(resolve));
+    adsWrapper.update();
+    const firstElement = adsWrapper.find('.Ads-tableRow-7').first();
+    firstElement.first().simulate('keypress');
+    await new Promise(resolve => setTimeout(resolve));
+    appWrapper.update();
+    expect(selectAd).toHaveBeenCalled();
+  });
 });
