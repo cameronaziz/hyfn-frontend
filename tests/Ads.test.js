@@ -43,17 +43,17 @@ describe('Ads Component', () => {
 
   it('will render data', async () => {
     const wrapper = mount(adsComponent);
-    expect(wrapper.find('.ad-row').exists()).toEqual(false);
+    expect(wrapper.find('.Ads-tableRow-7').exists()).toEqual(false);
     await new Promise(resolve => setTimeout(resolve));
     wrapper.update();
-    expect(wrapper.find('.ad-row').exists()).toEqual(true);
+    expect(wrapper.find('.Ads-tableRow-7').exists()).toEqual(true);
   });
 
   it('will click and execute adSelected', async () => {
     const adsWrapper = mount(adsComponent);
     await new Promise(resolve => setTimeout(resolve));
     adsWrapper.update();
-    const firstElement = adsWrapper.find('.ad-row').first();
+    const firstElement = adsWrapper.find('.Ads-tableRow-7').first();
     firstElement.first().simulate('click');
     await new Promise(resolve => setTimeout(resolve));
     appWrapper.update();

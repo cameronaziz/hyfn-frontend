@@ -10,7 +10,6 @@ const Ads = ({
   adSelected, classes, selectAd, data,
 }) => {
   if (data.loading) { return <div>Loading</div>; }
-  console.log(data);
   return (
     <Fragment>
       <h1>Ads</h1>
@@ -81,7 +80,7 @@ Ads.propTypes = {
     root: PropTypes.string.isRequired,
     table: PropTypes.string.isRequired,
     tableHeader: PropTypes.string.isRequired,
-    stickyHeader: PropTypes.string.isRequired,
+    stickyHeaderCell: PropTypes.string.isRequired,
     tableHeaderCell: PropTypes.string.isRequired,
     tableBody: PropTypes.string.isRequired,
     tableRow: PropTypes.string.isRequired,
